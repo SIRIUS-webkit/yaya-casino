@@ -55,7 +55,7 @@ function LobbyMenu({ menu }) {
 
   return (
     <div className="flex flex-wrap sm:space-x5 space-x-0 gap-5">
-      {menu?.reverse()?.map((item: MenuItemProp) => (
+      {menu?.map((item: MenuItemProp) => (
         <div
           key={item.id}
           className={`${
