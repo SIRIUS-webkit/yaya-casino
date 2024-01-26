@@ -35,7 +35,7 @@ function LobbyMenu({ menu }) {
         response = await fetch(
           `${
             process.env.API
-          }/games/tiles?gameCategories=${cat.toLowerCase()}&search=${
+          }/en/games/tiles?gameCategories=${cat.toLowerCase()}&search=${
             filterconfig.search
           }`
         );
