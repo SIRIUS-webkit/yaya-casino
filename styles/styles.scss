@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./_variable.scss";
+
+.default-input {
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  opacity: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px 12px;
+  background-color: #fff;
+}
+
+.primary-btn {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0px 16px;
+  padding: 5px 32px;
+  border-radius: 10px;
+  color: white;
+  background: $primary-color;
+  transition: all 0.3s ease-in;
+}
+
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
